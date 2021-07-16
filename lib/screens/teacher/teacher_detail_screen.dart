@@ -102,7 +102,6 @@ class _TeacherDetailScreenState extends State<TeacherDetailScreen> {
                 title: Text(_teacherDomain.gender),
               ),
               Divider(color: Colors.grey),
-              Divider(color: Colors.grey),
               ListTile(
                 leading: Icon(Icons.favorite),
                 title: Text(_teacherDomain.mata_pelajaran.toString()),
