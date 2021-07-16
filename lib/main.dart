@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:sekolahku/screens/home_screen.dart';
+import 'package:sekolahku/screens/login_screen.dart';
+import 'package:sekolahku/screens/register_screen.dart';
 import 'package:sekolahku/service/app_service.dart';
 import 'package:sekolahku/utils/lifecycle_event_handler.dart';
 
@@ -54,7 +56,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.blue),
       home: isDatabaseReady
-          ? HomeScreen()
+          ? RegisterScreen()
           : Scaffold(
               body: Center(
               child: CircularProgressIndicator(),

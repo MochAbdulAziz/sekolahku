@@ -31,10 +31,20 @@ class StudentModel {
     );
     ''';
 
+    String sqlRawLogin = '''
+    
+      CREATE TABLE IF NOT EXISTS login_1(
+      id_login INTEGER PRIMARY KEY NOT NULL,
+      username TEXT(20),
+      password TEXT(20)
+    );
+
+    ''';
+
     db.execute(sqlRawTeacher);
     db.execute(sqlRaw);
+    db.execute(sqlRawLogin);
   }
-  
 
   FutureOr<void> onConfigure(Database db) {}
 

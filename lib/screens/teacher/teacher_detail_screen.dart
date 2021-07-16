@@ -101,11 +101,11 @@ class _TeacherDetailScreenState extends State<TeacherDetailScreen> {
                 leading: Icon(Icons.label),
                 title: Text(_teacherDomain.gender),
               ),
-              // Divider(color: Colors.grey),
-              // ListTile(
-              //   leading: Icon(Icons.favorite),
-              //   title: Text(_teacherDomain.mata_pelajaran.toString()),
-              // )
+                // Divider(color: Colors.grey),
+                // ListTile(
+                //   leading: Icon(Icons.favorite),
+                //   title: Text(_teacherDomain.mata_pelajaran.toString()),
+                // )
             ],
           );
         },
